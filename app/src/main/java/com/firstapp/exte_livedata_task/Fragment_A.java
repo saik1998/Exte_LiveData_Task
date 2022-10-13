@@ -1,6 +1,9 @@
 package com.firstapp.exte_livedata_task;
 
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -13,6 +16,10 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,6 +75,8 @@ public class Fragment_A extends Fragment {
                 else
                 {
                     dataModelList.add(enameStr);
+//                    loadData();
+//                    saveData();
 //                    dataModelList.add(eaddressStr);
 
 
@@ -87,4 +96,7 @@ public class Fragment_A extends Fragment {
         return view;
 
     }
+
+
+
 }
